@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Michael Melnikov](https://up.htmlacademy.ru/adaptive/29/user/1258921).
-* Наставник: `Неизвестно`.
+* Наставник: `Виктор Рыбаков`(https://htmlacademy.ru/profile/viktor-rybakov).
 
 ---
 
