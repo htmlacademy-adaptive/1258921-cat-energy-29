@@ -1,12 +1,44 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS. Адаптивная вёрстка и автоматизация</a>».</p>
-
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__primary-logo" href="#">
+        <img src="img/logo-primary-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+      </a>
+      <a class="main-header__secondary-logo secondary-logo" href="#">
+        <img src="img/logo-secondary.svg" alt="Cat Energy.">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toglle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list">
+            <li class="main-nav__item main-nav__item--current">
+              <a href="">главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">каталог продукции</a>
+            </li>
+            <li class="main-nav__item">
+              <a href="">подбор программы</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="main-container">
+      <h1 class="visually-hidden">Онлайн магазин функционального питания для котов</h1>
+      <section class="program-selection">
+        <h2 class="program-selection__title">Функциональное питание для котов</h2>
+        <p class="program-selection__description">Занялся собой? Займись котом!</p>
+        <img class="program-selection__image" src="#" alt="Cat Energy with chicken.">
+        <a class="program-selection__link" href="#">подобрать программу</a>
+      </section>
+    </main>
   </body>
 </html>
