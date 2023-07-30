@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Кэт энерджи</title>
+</head>
+
+<body class="page__body">
+  <h1 class="visually-hidden">Подбор программы</h1>
+  <section class="selection">
+    <h2 class="selection__title main-title">Подбор программы</h2>
+    <form class="selection__form" action="https://echo.htmlacademy.ru/" method="post">
+      <fieldset class="selection__field selection-field">
+        <h2 class="visually-hidden">Личные данные кота</h2>
+        <label class="selection-field__label selection-label">ИМЯ:*
+          <input class="selection-label__input text-input" name="cat-name" type="text" placeholder="Барсик">
+        </label>
+        <label class="selection-field__label selection-label">Вес (кг):*
+          <input class="selection-label__input text-input" name="cat-weight" type="text" placeholder="7">
+        </label>
+        <label class="selection-field__label selection-label">Возраст (лет):
+          <input class="selection-label__input text-input" name="cat-age" type="text" placeholder="7">
+        </label>
+      </fieldset>
+      <fieldset class="selection__field selection-field">
+        <h2 class="visually-hidden">Выбор программы</h2>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input radio-input radio-input--checked" name="type-of-program" value="weight-loss" type="radio" checked>
+          похудение
+        </label>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input radio-input" name="type-of-program" value="weight-gain" type="radio">
+          Набор массы
+        </label>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input radio-input" name="type-of-program" value="don't-know" type="radio">
+          Не знаю (Нужен ваш совет)
+        </label>
+      </fieldset>
+      <fieldset class="selection__field selection-field">
+        <h2 class="selection-field__title field-title">Контактные данные (владельца кота)</h2>
+        <label class="selection-field__label selection-label">E-mail:*
+          <input class="selection-label__input text-input" name="email" type="text" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="selection-field__label selection-label">Телефон:*
+          <input class="selection-label__input text-input" name="phone" type="text" placeholder="8 (960) 900-60-90">
+        </label>
+      </fieldset>
+      <fieldset class="selection__field selection-field">
+        <h2 class="selection-field__title field-title">Комментарий</h2>
+        <label class="selection-field__label selection-label">
+          <span class="visually-hidden">Комментарий</span>
+          <input class="selection-label__input text-input" name="comment" type="textarea" placeholder="Расскажите обо всех повадках кота">
+        </label>
+      </fieldset>
+      <fieldset class="selection__field selection-field">
+        <h2 class="visually-hidden">Дополнительно</h2>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input checkbox checkbox--checked" name="additionally" value="sweetener" type="checkbox" checked>
+          сахарозаменитель
+        </label>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input checkbox" name="additionally" value="drinking-water" type="checkbox">
+          питьевая вода
+        </label>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input checkbox" name="additionally" value="milk" type="checkbox">
+          молоко
+        </label>
+        <label class="selection-field__label selection-label">
+          <input class="selection-label__input checkbox" name="additionally" value="vitamins" type="checkbox">
+          витамины
+        </label>
+      </fieldset>
+      <button class="selection__button button-primary" type="submit">отправить заявку</button>
+      <span class="selection_required">* — Обязательные поля</span>
+    </form>
+  </section>
+  <section class="contacts">
+    <h2 class="visually-hidden">Адрес компании</h2>
+    <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
+    <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
+    <img class="contacts__map" src="img/map.jpg" width="320" height="362"
+      alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург.">
+  </section>
+</main>
+
+<footer class="main-footer">
+  <section class="main-footer__secondary-logo-wrapper">
+    <h2 class="visually-hidden">Логотип</h2>
+    <a class="main-footer__secondary-logo-link secondary-logo" href="#">
+      <img src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+    </a>
+  </section>
+  <section class="main-footer__social social">
+    <h2 class="visually-hidden">Социальные сети</h2>
+    <ul class="social__list">
+      <li class="social__item">
+        <a class="social__link social-link social-link--vk" href="#">
+          <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social-link social-link--youtube" href="#">
+          <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
+        </a>
+      </li>
+      <li class="social__item">
+        <a class="social__link social-link social-link--telegram" href="#">
+          <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
+        </a>
+      </li>
+    </ul>
+  </section>
+  <section class="main-footer__copyright copyright">
+    <h2 class="visually-hidden">Авторские права</h2>
+    <p class="copyright__text">
+      <a class="copyright__link" href="https://htmlacademy.ru/">HTML Academy</a>
+    </p>
+    <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+  </section>
+</footer>
+</body>
+
+</html>
