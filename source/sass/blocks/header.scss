@@ -1,9 +1,16 @@
+@use "common/variables.scss";
+
 .header {
   font-family: "Oswald", sans-serif;
   font-size: 20px;
   line-height: 20px;
   background-color: #ffffff;
   color: #111111;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
 }
 
 .header__link {
@@ -16,4 +23,16 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.header__logo {
+  height: 38px;
+
+  @media (min-width: variables.$tablet-width) {
+    height: 50px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 59px;
+  }
 }
