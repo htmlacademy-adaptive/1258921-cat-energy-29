@@ -1,9 +1,44 @@
+@use "common/variables.scss";
+
 .navigation {
-  display: none;
+  display: flex;
 }
 
 .navigation__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.navigation__link {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000000;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .navigation__wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+
+  .navigation__list {
+    width: 570px;
+  }
+
+  .navigation__toglle {
+    display: none;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .navigation__wrapper {
+    width: 960px;
+  }
+
+  .navigation__list {
+    width: 780px;
+  }
 }
