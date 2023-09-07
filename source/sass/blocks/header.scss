@@ -7,6 +7,7 @@
   line-height: 20px;
   background-color: #ffffff;
   color: #111111;
+  margin: 13px 0;
 }
 
 .header__wrapper {
@@ -62,5 +63,12 @@
     position: static;
     transform: translate(0, 0);
     margin-left: 13px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .header {
+    font-size: 20px;
+    line-height: 30px;
   }
 }

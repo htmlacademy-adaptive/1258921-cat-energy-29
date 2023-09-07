@@ -79,7 +79,6 @@
   display: block;
   padding: 22px;
   text-align: center;
-  background-color: #ffffff;
   border-bottom: 1px solid #E6E6E6;
 }
 
@@ -132,12 +131,17 @@
 }
 
 @media (min-width: variables.$desktop-width) {
-  .navigation__wrapper {
-    width: 960px;
+  .navigation {
+    width: 610px;
+    background-color: #68B738;
   }
 
-  .navigation__list {
-    width: 780px;
+  .navigation__link {
+    color: #ffffff;
+  }
+
+  .navigation__link--current::before {
+    background-color: #ffffff;
   }
 }
 
