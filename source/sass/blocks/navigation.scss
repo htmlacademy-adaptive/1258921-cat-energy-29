@@ -1,7 +1,67 @@
 @use "common/variables.scss";
 
 .navigation {
-  display: flex;
+  display: block;
+  // position: relative;
+  background-color: #ffffff;
+}
+
+.navigation__toglle {
+  width: 24px;
+  height: 22px;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  display: block;
+  background-color: #ffffff;
+}
+
+.navigation--closed .navigation__toglle::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  left: 0;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.navigation--opened .navigation__toglle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background-color: #000000;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    // box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.navigation__wrapper {
+  // display: block;
+  display: none;
+  position: absolute;
+  top: 58px;
+  left: 0;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .navigation__list {
@@ -14,18 +74,56 @@
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
+
+  // position: relative;
+  display: block;
+  padding: 22px;
+  text-align: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #E6E6E6;
+}
+
+.navigation__item:first-of-type .navigation__link {
+  border-top: 1px solid #E6E6E6;
 }
 
 @media (min-width: variables.$tablet-width) {
+  .navigation {
+    display: block;
+    width: 530px;
+  }
+
   .navigation__wrapper {
     display: flex;
-    justify-content: space-between;
-    width: 640px;
-    margin: 0 auto;
+    position: static;
   }
 
   .navigation__list {
-    width: 570px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .navigation__link {
+    padding: 12px 16px;
+    border: none;
+    position: relative;
+  }
+
+  .navigation__link--current::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: block;
+    width: calc(100% - 32px);
+    height: 2px;
+    background-color: #68B738;
+  }
+
+  .navigation__item:first-of-type .navigation__link {
+    border-top: none;
   }
 
   .navigation__toglle {
@@ -40,5 +138,12 @@
 
   .navigation__list {
     width: 780px;
+  }
+}
+
+
+@media (max-width: variables.$mobile-width-only) {
+  .navigation--closed .navigation__item {
+    display: none;
   }
 }
