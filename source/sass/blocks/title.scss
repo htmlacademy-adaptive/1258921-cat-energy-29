@@ -1,3 +1,5 @@
+@use "common/variables.scss";
+
 .title {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -6,3 +8,22 @@
   text-transform: uppercase;
   color: #000000;
 }
+
+.primary-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff ;
+  text-align: center;
+}
+
+@media (min-width: variables.$tablet-width) {
+  .primary-title {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {}

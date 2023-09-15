@@ -1,6 +1,21 @@
 .programs {
+  padding-top: 27px;
   background-color: #68B738D9;
 }
+
+.programs__title {
+  margin: 0 0 25px 0;
+}
+
+.programs__description {
+  margin: 0 0 29px 0;
+  font-family: "Oswald", sans-serif;
+  text-align: center;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
 
 .programs__list {
   list-style-type: none;
