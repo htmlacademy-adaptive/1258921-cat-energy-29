@@ -1,6 +1,10 @@
 .programs {
   padding-top: 27px;
   background-color: #68B738D9;
+  background-image: linear-gradient(to right, #ffffff 50%, #68B738D9 50%), url("../../img/index-background-cat.png");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: auto;
 }
 
 .programs__title {
