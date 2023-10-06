@@ -79,11 +79,11 @@
   display: block;
   padding: 22px;
   text-align: center;
-  border-bottom: 1px solid #E6E6E6;
+  border-bottom: 1px solid #e6e6e6;
 }
 
 .navigation__item:first-of-type .navigation__link {
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: variables.$tablet-width) {
@@ -118,7 +118,7 @@
     display: block;
     width: calc(100% - 32px);
     height: 2px;
-    background-color: #68B738;
+    background-color: #68b738;
   }
 
   .navigation__item:first-of-type .navigation__link {

@@ -1,17 +1,15 @@
 .example {
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding: 25px 0 40px 0;
 }
 
 .example__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
-  font-weight: 400;
   line-height: 40px;
-  letter-spacing: 0em;
   text-align: left;
-  margin: 0;
   color: #000000;
+  margin: 0;
   margin-bottom: 40px;
 }
 
@@ -30,7 +28,7 @@
 
 .example__card {
   width: 124px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 3px;
   display: flex;
   flex-direction: column;
