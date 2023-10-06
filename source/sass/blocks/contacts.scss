@@ -1,4 +1,32 @@
-.contacts__address {
-  font-style: normal;
+.contacts {
+  padding-top: 26px;
+}
+
+.contacts__title {
+  width: 140px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 20px;
+  text-align: left;
+  color: #111111;
+  text-transform: uppercase;
+  margin: 0;
+  display: inline-block;
+}
+
+.contacts__address {
+  width: 140px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: left;
+  font-style: normal;
+  color: #444444;
+  display: inline-block;
+}
+
+.contacts__map {
+  margin: 0 auto;
 }

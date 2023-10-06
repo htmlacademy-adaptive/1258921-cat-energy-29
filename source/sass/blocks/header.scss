@@ -2,20 +2,26 @@
 
 .header {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 20px;
   line-height: 20px;
   background-color: #ffffff;
   color: #111111;
+  margin: 13px 0;
 }
 
 .header__wrapper {
   display: flex;
   justify-content: space-between;
+  position: relative;
+  margin: 13px auto;
 }
 
 .header__link {
   text-decoration: none;
   color: #111111;
+  display: flex;
+  align-items: center;
 }
 
 .header__logo:last-child {
@@ -26,13 +32,43 @@
 }
 
 .header__logo {
-  height: 38px;
+  // width: 33px;
+  // height: 38px;
 
   @media (min-width: variables.$tablet-width) {
-    height: 50px;
+    // width: 60px;
+    // height: 50px;
   }
 
   @media (min-width: variables.$desktop-width) {
-    height: 59px;
+    // width: 70px;
+    // height: 59px;
+  }
+}
+
+@media (min-width: variables.$tablet-width) {
+  .header {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .header__wrapper {
+    // display: flex;
+    // justify-content: space-between;
+    // position: relative;
+    margin: 25px auto;
+  }
+
+  .header__logo:last-child {
+    position: static;
+    transform: translate(0, 0);
+    margin-left: 13px;
+  }
+}
+
+@media (min-width: variables.$desktop-width) {
+  .header {
+    font-size: 20px;
+    line-height: 30px;
   }
 }
