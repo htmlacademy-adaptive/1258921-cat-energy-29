@@ -5,13 +5,17 @@
   line-height: 18px;
   text-align: center;
   text-transform: uppercase;
+  text-decoration: none;
   color: #ffffff;
   border: none;
+  display: block;
 }
 
 .button--primary {
   background-color: #68b738;
-  padding: 8px 44px 8px 44px;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 10px;
 }
 
 .button--secondary {
