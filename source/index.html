@@ -35,33 +35,37 @@
       </nav>
     </div>
   </header>
-
   <main class="main-container">
     <h1 class="visually-hidden">Онлайн магазин функционального питания для котов</h1>
+    <section class="hero">
+      <div class="hero__wrapper wrapper">
+        <h2 class="hero__title primary-title">Функциональное питание для котов</h2>
+        <p class="hero__description">Занялся собой? Займись котом!</p>
+        <img class="hero__image" src="img/cat-energy-chicken.png" alt="Cat Energy with chicken.">
+        <a class="hero__link button button--primary" href="#">подобрать программу</a>
+      </div>
+    </section>
     <section class="programs">
-      <div class="wrapper">
-        <h2 class="programs__title primary-title">Функциональное питание для котов</h2>
-        <p class="programs__description">Занялся собой? Займись котом!</p>
-        <img class="programs__image" src="img/cat-energy-chicken.png" alt="Cat Energy with chicken.">
-        <a class="programs__link button button--primary" href="#">подобрать программу</a>
-        <ul class="programs__list">
-          <li class="programs__item  program-card program-card--slim">
-            <h3 class="program-card__title title">похудение</h3>
-            <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-card__link" href="#">каталог slim</a>
-          </li>
-          <li class="programs__item program-card program-card--pro">
-            <h3 class="program-card__title title">похудение</h3>
-            <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
-              деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a class="program-card__link" href="#">каталог pro</a>
-          </li>
-        </ul>
+      <div class="programs__wrapper wrapper">
+      <h2 class="visually-hidden">Программы похудения</h2>
+      <ul class="programs__list">
+        <li class="programs__item  program-card program-card--slim">
+          <h3 class="program-card__title title">похудение</h3>
+          <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program-card__link" href="#">каталог slim</a>
+        </li>
+        <li class="programs__item program-card program-card--pro">
+          <h3 class="program-card__title title">похудение</h3>
+          <p class="program-card__description">Ваш кот весит больше собаки и почти утратил способность лазить по
+            деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="program-card__link" href="#">каталог pro</a>
+        </li>
+      </ul>
       </div>
     </section>
     <section class="advantages">
-      <div class="wrapper">
+      <div class="advantages__wrapper wrapper">
         <h2 class="advantages__title">Как это работает</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--leaf">
@@ -84,7 +88,7 @@
       </div>
     </section>
     <section class="example">
-      <div class="wrapper">
+      <div class="example__wrapper wrapper">
         <h2 class="example__title">Живой пример</h2>
         <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
           Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16
@@ -112,51 +116,41 @@
       </div>
     </section>
     <section class="contacts">
-      <div class="wrapper">
+      <div class="contacts__wrapper wrapper">
         <h2 class="visually-hidden">Адрес компании</h2>
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
       </div>
       <img class="contacts__map" src="img/map.jpg" width="320" height="362"
-          alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург.">
+        alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург.">
     </section>
   </main>
-
   <footer class="footer">
-    <div class="wrapper">
-      <section class="footer__logo-section">
-          <h2 class="visually-hidden">Логотип</h2>
-          <a class="footer__link logo-link" href="#">
-            <img class="footer__logo" src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+    <div class="footer__wrapper wrapper">
+      <a class="footer__link logo-link" href="#">
+        <img class="footer__logo" src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+      </a>
+      <ul class="footer__list social-list">
+        <li class="social__item">
+          <a class="social__link social__link--vk" href="#">
+            <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
           </a>
-      </section>
-      <section class="footer__social-section social">
-          <h2 class="visually-hidden">Социальные сети</h2>
-          <ul class="social__list">
-            <li class="social__item">
-              <a class="social__link social-link social-link--vk" href="#">
-                <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social-link social-link--youtube" href="#">
-                <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social-link social-link--telegram" href="#">
-                <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
-              </a>
-            </li>
-          </ul>
-      </section>
-      <section class="footer__copyright-section copyright">
-          <h2 class="visually-hidden">Авторские права</h2>
-          <a class="copyright__link" href="https://htmlacademy.ru/">
-            <p class="copyright__text">HTML Academy</p>
-            <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#">
+            <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
           </a>
-      </section>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="#">
+            <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
+          </a>
+        </li>
+      </ul>
+      <a class="copyright__link" href="https://htmlacademy.ru/">
+        <p class="copyright__text">HTML Academy</p>
+        <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+      </a>
     </div>
   </footer>
 </body>

@@ -4,21 +4,17 @@
   flex-direction: column;
 }
 
+.footer__list {
+  border-bottom: 1px solid #d9d9d9;
+}
+
 .footer__link {
   display: flex;
   justify-content: center;
-}
-
-.footer__logo-section {
   border-bottom: 1px solid #d9d9d9;
   padding: 40px 0 20px 0;
 }
 
-.footer__social-section {
-  border-bottom: 1px solid #d9d9d9;
-  padding: 20px 0 20px 0;
-}
-
-.footer__copyright-section {
+.copyright__link {
   padding: 20px 0 40px 0;
 }

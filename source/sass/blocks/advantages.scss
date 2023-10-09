@@ -31,17 +31,29 @@
 
   &::before {
     content: "";
-    // position: absolute;
-    // display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-    // margin-left: 20px;
+    background: #68b738 no-repeat 50%;
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/advantages-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantages-water.svg");
+  }
+
+  &--cutlery::before {
+    background-image: url("../../img/advantages-eat.svg");
+  }
+
+  &--watch::before {
+    background-image: url("../../img/advantages-watch.svg");
   }
 }
 
 .advantages__text {
   margin: 0;
-  // padding-left: 80px;
-  // padding-right: 20px;
+  max-width: 200px;
 }
