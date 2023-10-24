@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Кэт энерджи</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -12,23 +13,25 @@
     <div class="header__wrapper wrapper">
       <a class="header__link logo-link" href="#">
         <img class="header__logo" src="img/logo-primary-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        <img class="header__logo" src="img/logo-secondary.svg" alt="Cat Energy.">
+        <img class="header__logo" src="img/logo-secondary.svg" width="101" height="18" alt="Cat Energy.">
       </a>
-      <nav class="navigation">
-        <button class="navigation__toglle button button--toggle" type="button">
+      <nav class="navigation navigation--closed">
+        <button class="navigation__toglle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">главная</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">каталог продукции</a>
-          </li>
-          <li class="navigation__item">
-            <a class="navigation__link" href="#">подбор программы</a>
-          </li>
-        </ul>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a class="navigation__link navigation__link--current" href="#">главная</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">каталог продукции</a>
+            </li>
+            <li class="navigation__item">
+              <a class="navigation__link" href="#">подбор программы</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
   </header>
@@ -44,13 +47,11 @@
             <legend class="visually-hidden">Личные данные кота</legend>
             <div class="selection-field__wrapper">
               <label class="selection-field__label selection-label" for="cat-name">ИМЯ:*</label>
-              <input class="selection-label__input" id="cat-name" name="cat-name" type="text"
-                placeholder="Барсик">
+              <input class="selection-label__input" id="cat-name" name="cat-name" type="text" placeholder="Барсик">
             </div>
             <div class="selection-field__wrapper">
               <label class="selection-field__label selection-label" for="cat-weight">Вес (кг):*</label>
-              <input class="selection-label__input" id="cat-weight" name="cat-weight" type="text"
-                placeholder="7">
+              <input class="selection-label__input" id="cat-weight" name="cat-weight" type="text" placeholder="7">
             </div>
             <div class="selection-field__wrapper">
               <label class="selection-field__label selection-label" for="cat-age">Возраст (лет): </label>
@@ -85,8 +86,7 @@
             </div>
             <div class="selection-field__wrapper">
               <label class="selection-field__label selection-label" for="phone">Телефон:*</label>
-              <input class="selection-label__input" id="phone" name="phone" type="text"
-                placeholder="8 (960) 900-60-90">
+              <input class="selection-label__input" id="phone" name="phone" type="text" placeholder="8 (960) 900-60-90">
             </div>
           </fieldset>
           <fieldset class="selection__field selection-field">
@@ -136,6 +136,7 @@
           alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург.">
       </div>
     </section>
+
   </main>
 
   <footer class="footer">

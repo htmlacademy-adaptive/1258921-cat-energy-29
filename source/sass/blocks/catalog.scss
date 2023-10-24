@@ -5,6 +5,7 @@
 
 .catalog__title {
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 36px;
   margin: 0;
@@ -26,11 +27,24 @@
     content: "";
     display: block;
     width: 30px;
-    height: 30px;
+    height: 2px;
     background-color: #d3d3d3;
     margin: 0 auto;
-    margin-bottom: 23px;
+    margin-bottom: 37px;
   }
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 2px;
+    background-color: #d3d3d3;
+    margin: 0 auto;
+    transform: rotate(90deg);
+    top: -139px;
+  }
+
 }
 
 .catalog__text {
