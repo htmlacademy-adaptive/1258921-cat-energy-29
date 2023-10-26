@@ -1,3 +1,5 @@
+@use "common/variables.scss";
+
 .social-list {
   list-style-type: none;
   margin: 0;
@@ -5,6 +7,10 @@
   display: flex;
   gap: 24px;
   justify-content: center;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+  }
 }
 
 .social-link {

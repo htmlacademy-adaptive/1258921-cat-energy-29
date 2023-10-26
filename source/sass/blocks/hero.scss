@@ -23,6 +23,11 @@
 
 .hero__title {
   margin: 0 0 25px 0;
+  text-align: center;
+
+  @media (min-width: variables.$tablet-width) {
+    text-align: left;
+  }
 }
 
 .hero__description {
@@ -35,6 +40,9 @@
 
   @media (min-width: variables.$tablet-width) {
     color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
   }
 }
 

@@ -1,11 +1,24 @@
+@use "common/variables.scss";
+
 .footer {
   background-color: #f2f2f2;
   display: flex;
   flex-direction: column;
 }
 
+.footer__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 147px;
+}
+
 .footer__list {
   border-bottom: 1px solid #d9d9d9;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+  }
 }
 
 .footer__link {
@@ -13,6 +26,11 @@
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
   padding: 40px 0 20px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    padding: 0;
+    border: none;
+  }
 }
 
 .copyright__link {

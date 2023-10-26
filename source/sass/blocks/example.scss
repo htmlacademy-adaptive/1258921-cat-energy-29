@@ -1,21 +1,41 @@
+@use "common/variables.scss";
+
 .example {
   background-color: #eaeaea;
   padding: 25px 0 40px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #ffffff;
+    padding: 45 0 100px 0;
+  }
 }
 
 .example__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
   line-height: 40px;
+  font-weight: 400;
   text-align: left;
   color: #000000;
   margin: 0;
   margin-bottom: 40px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
 }
 
 .example__text {
   margin: 0;
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+  }
 }
 
 .example__list {
@@ -24,6 +44,10 @@
   padding: 0;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 366px;
+  }
 }
 
 .example__card {
@@ -32,7 +56,12 @@
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
+
+  @media (min-width: variables.$tablet-width) {
+    width: 162px;
+    height: 77px;
+    justify-content: center;
+  }
 }
 
 .example__number {
@@ -57,10 +86,18 @@
   color: #000000;
   text-transform: uppercase;
   text-align: center;
+
+  // @media (min-width: variables.$tablet-width) {
+  //   display: inline;
+  // }
 }
 
 .example__slider {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #EAEAEA;
+  }
 }

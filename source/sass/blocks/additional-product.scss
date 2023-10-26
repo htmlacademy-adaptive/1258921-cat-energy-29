@@ -1,9 +1,26 @@
+@use "../common/variables.scss";
+
 .additional-product {
   padding: 13px 0 19px;
   border-top: 1px solid #cdcdcd;
 
   &:last-child {
     border-bottom: 1px solid #cdcdcd;
+  }
+
+  @media (min-width: variables.$tablet-width) {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    &:first-child {
+      border-top: none;
+    }
+
+    &:last-child {
+      border-bottom: none;
+    }
+
   }
 }
 
@@ -16,6 +33,13 @@
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 13px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
 }
 
 .additional-product__list {
@@ -24,12 +48,23 @@
   font-size: 14px;
   line-height: 14px;
   font-weight: 400;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
 }
 
 .additional-product__description {
   margin: 0;
   margin-bottom: 15px;
   justify-self: flex-end;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+  }
 }
