@@ -21,12 +21,19 @@
   }
 }
 
+.hero__wrapper {
+  @media (min-width: variables.$tablet-width) {
+    padding-left: 90px;
+  }
+}
+
 .hero__title {
   margin: 0 0 25px 0;
   text-align: center;
 
   @media (min-width: variables.$tablet-width) {
     text-align: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -46,6 +53,18 @@
   }
 }
 
+.hero__image {
+  @media (min-width: variables.$tablet-width) {
+    position: relative;
+  }
+}
+
 .hero__link {
   margin-bottom: 20px;
+
+  @media (min-width: variables.$tablet-width) {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }

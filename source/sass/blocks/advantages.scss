@@ -11,10 +11,16 @@
 .advantages__title {
   margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   color: #000000;
+
+  @media (min-width: variables.$tablet-width) {
+  font-size: 60px;
+  line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -63,6 +69,11 @@
     width: 60px;
     height: 60px;
     background: #68b738 no-repeat 50%;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
   }
 
   &--leaf::before {
@@ -89,5 +100,6 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 16px;
     line-height: 24px;
+    max-width: 100%;
   }
 }

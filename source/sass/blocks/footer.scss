@@ -2,15 +2,21 @@
 
 .footer {
   background-color: #f2f2f2;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
 }
 
 .footer__wrapper {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 147px;
+  flex-direction: column;
+
+  @media (min-width: variables.$tablet-width) {
+    border: none;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 147px;
+  }
 }
 
 .footer__list {
