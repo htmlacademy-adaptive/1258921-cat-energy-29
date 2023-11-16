@@ -6,13 +6,21 @@
   display: grid;
   grid-template-columns: 50px auto;
   column-gap: 20px;
-  row-gap: 22px;
+  row-gap: 23px;
   align-items: center;
 
   @media (min-width: variables.$tablet-width) {
     grid-template-columns: 340px auto;
     padding: 77px 63px 53px 52px;
+    column-gap: 53px;
     // align-items: flex-start;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-template-columns: 100px auto;
+    padding: 41px 52px 55px 52px;
+    column-gap: 62px;
+    align-items: flex-start;
   }
 
   &::before {
@@ -30,6 +38,13 @@
       grid-row: 1 / 4;
       width: 200px;
       height: 200px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100px;
+      height: 100px;
     }
 
   }
@@ -55,6 +70,12 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+  }
 }
 
 .program-card__description {
@@ -67,6 +88,11 @@
     font-size: 16px;
     line-height: 24px;
     color: #000000;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
   }
 }
 
@@ -86,6 +112,14 @@
 
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
+    column-gap: 25px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / -1;
+    margin-top: 24px;
   }
 
   &::before {

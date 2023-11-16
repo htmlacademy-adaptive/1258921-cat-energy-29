@@ -1,11 +1,33 @@
 @use "common/variables.scss";
 
+.programs {
+  @media (min-width: variables.$desktop-width) {
+    margin-top: 82px;
+  }
+}
+
 .programs__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    column-gap: 80px;
+  }
+}
+
+.programs__item {
+  @media (min-width: variables.$desktop-width) {
+    width: 570px;
+    height: 100%;
+  }
 }
 
 .programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 0;
+  }
 }
