@@ -5,7 +5,6 @@
 }
 
 .additional__wrapper {
-
   @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr auto;
@@ -44,7 +43,7 @@
   padding: 0;
 
   @media (min-width: variables.$tablet-width) {
-    border: 2px solid #D3D3D3;
+    border: 2px solid #d3d3d3;
     padding: 26px 38px 0 38px;
   }
 
@@ -128,7 +127,7 @@
     align-self: center;
     top: 0;
     left: 0;
-    transform: translate(0 , 0);
+    transform: translate(0, 0);
     text-align: left;
     justify-self: center;
   }
@@ -139,7 +138,6 @@
 }
 
 .additional__button {
-
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 3;
   }

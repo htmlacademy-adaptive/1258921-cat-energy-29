@@ -46,7 +46,6 @@
       width: 100px;
       height: 100px;
     }
-
   }
 
   // &--slim::before  {
@@ -138,9 +137,9 @@
   &::after {
     content: "";
     display: block;
-    background-color: red;
     background: url("../../img/program-arrow.svg") no-repeat center;
+    background-color: #ff0000;
     width: 32px;
     height: 10px;
-    }
+  }
 }
