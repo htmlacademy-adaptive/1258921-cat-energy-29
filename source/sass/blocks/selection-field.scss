@@ -2,29 +2,8 @@
   background-color: #ffffff;
 }
 
-.selection-field__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 45px;
-
-  &:not(:last-of-type) {
-    margin-bottom: 14px;
-  }
-}
-
-.selection-field__label {
-  margin-right: 13px;
-  flex-shrink: 0;
-}
-
-.selection-label__input {
-  font-family: "Oswald", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 18px;
-  height: 100%;
-  flex-grow: 1;
-  border: 1px solid #e7e7e7;
-  padding: 14px 15px 13px;
+.selection-field__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
