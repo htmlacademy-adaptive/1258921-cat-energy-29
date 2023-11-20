@@ -1,4 +1,15 @@
 .radio-input {
   background-color: #ffffff;
   margin: 0;
+  position: relative;
+  // border: 1px solid green;
+  // &::before {
+  //   border: 1px solid #cdcdcd;
+  // }
+
+  &--checked::before {
+    content: "";
+    background-color: green;
+    position: absolute;
+  }
 }

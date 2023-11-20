@@ -66,15 +66,15 @@
   }
 }
 
-.hero__image {
-  @media (min-width: variables.$tablet-width) {
-    position: relative;
-  }
+// .hero__image {
+//   @media (min-width: variables.$tablet-width) {
+//     position: relative;
+//   }
 
-  @media (min-width: variables.$desktop-width) {
-    ///
-  }
-}
+//   @media (min-width: variables.$desktop-width) {
+//     ///
+//   }
+// }
 
 .hero__link {
   margin-bottom: 20px;

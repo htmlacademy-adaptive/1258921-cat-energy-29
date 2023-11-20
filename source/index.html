@@ -11,10 +11,15 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="header__link logo-link" href="#">
+      <a class="header__link" href="#">
         <!-- I need to fix this. I can use a picture tag here-->
         <img class="header__logo" src="img/logo-primary-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         <img class="header__logo" src="img/logo-secondary.svg" width="101" height="18" alt="Cat Energy.">
+        <!-- <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+        </picture> -->
       </a>
       <nav class="navigation navigation--closed">
         <button class="navigation__toglle" type="button">
@@ -42,7 +47,11 @@
       <div class="hero__wrapper wrapper">
         <h2 class="hero__title primary-title">Функциональное<br> питание для котов</h2>
         <p class="hero__description">Занялся собой? Займись котом!</p>
-        <img class="hero__image" src="img/cat-energy-chicken.png" alt="Cat Energy with chicken.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/cat-energy-chicken-desktop.png">
+          <source media="(min-width: 768px)" srcset="img/cat-energy-chicken-tablet.png">
+          <img class="hero__image" width="280" height="270" src="img/cat-energy-chicken.png" alt="Cat Energy with chicken.">
+        </picture>
         <a class="hero__link button button--primary" href="#">подобрать программу</a>
       </div>
     </section>
@@ -110,7 +119,11 @@
             <p class="example__result">Затраты на питание: 15 000 РУБ.</p>
           </div>
           <!-- I need to use picture tag here -->
-          <img class="example__image" src="img/slider-image.png" width="280" height="256" alt="Худой кот/Толстый кот.">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="slider-image-desktop.png">
+            <source media="(min-width: 768px)" srcset="slider-image-tablet.png">
+            <img class="example__image" width="280" height="256" src="img/slider-image.png" alt="Худой кот/Толстый кот.">
+          </picture>
         </div>
       </div>
     </section>
@@ -120,39 +133,62 @@
         <p class="contacts__title">приглашаем к сотрудничеству дилеров!</p>
         <address class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</address>
       </div>
-      <!-- <iframe src="" frameborder="0"></iframe> -->
-      <img class="contacts__map" src="img/map.jpg" width="320" height="362"
-        alt="ул. Большая Конюшенная, д. 19/8, Санкт-Петербург.">
+        <iframe
+        class="contacts__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426"
+        width="768"
+        height="400"
+        allowfullscreen
+        title="Офис компании по адресу Большая Конюшенная ул., 19/8, Санкт-Петербург, 191186"></iframe>
     </section>
   </main>
   <footer class="footer">
     <div class="footer__wrapper wrapper">
       <a class="footer__link logo-link" href="#">
-        <img class="footer__logo" src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="#">
+          <source media="(min-width: 768px)" srcset="#">
+          <img class="footer__logo" src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+        </picture>
       </a>
       <ul class="footer__list social-list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="#">
-            <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
+            </picture>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
-            <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
+              <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
+            </picture>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="#">
+              <source media="(min-width: 768px)" srcset="#">
             <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
+            </picture>
           </a>
         </li>
       </ul>
       <a class="copyright__link" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
-        <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="#">
+          <source media="(min-width: 768px)" srcset="#">
+          <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+        </picture>
       </a>
     </div>
   </footer>
 </body>
-
 </html>

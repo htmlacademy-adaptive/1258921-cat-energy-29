@@ -7,3 +7,62 @@
   margin: 0;
   padding: 0;
 }
+
+.selection-field__item {
+  position: relative;
+}
+
+.radio-input + .selection-field__control-mark {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.radio-input[type="radio"]:checked + .selection-field__control-mark {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13px;
+    height: 13px;
+    background-color: #68B738;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.checkbox + .selection-field__control-mark {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  cursor: pointer;
+  background-color: #ffffff;
+}
+
+.checkbox[type="checkbox"]:checked + .selection-field__control-mark {
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 19px;
+    height: 16px;
+    // background-color: #68B738;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("../../img/check-mark.svg") no-repeat center;
+  }
+}
