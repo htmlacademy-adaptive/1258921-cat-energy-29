@@ -2,14 +2,14 @@
   background-color: #ffffff;
   margin: 0;
   position: relative;
-  // border: 1px solid green;
+  // border: 1px solid #68b738;
   // &::before {
   //   border: 1px solid #cdcdcd;
   // }
 
   &--checked::before {
     content: "";
-    background-color: green;
+    background-color: #68b738;
     position: absolute;
   }
 }
