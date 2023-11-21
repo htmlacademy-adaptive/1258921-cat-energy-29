@@ -1,3 +1,27 @@
-.additional-product {
-  background-color: #ffffff;
+@use "../common/variables.scss";
+
+.additional-product__title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 13px;
+  grid-column: 1 / -1;
+  grid-row: 1 / 2;
+}
+
+.additional-product__term {
+  margin: 0;
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+
+.additional-product__description {
+  margin: 0;
+  justify-self: flex-end;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }

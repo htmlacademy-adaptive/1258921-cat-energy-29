@@ -1,4 +1,3 @@
-// Начните писать стили здесь
 @use "common/variables.scss";
 @use "common/visually-hidden.scss";
 @use "common/fonts.scss";
@@ -8,6 +7,7 @@
 @use "blocks/navigation.scss";
 @use "blocks/button.scss";
 @use "blocks/main-container.scss";
+@use "blocks/hero.scss";
 @use "blocks/programs.scss";
 @use "blocks/title.scss";
 @use "blocks/program-card.scss";
@@ -15,8 +15,7 @@
 @use "blocks/example.scss";
 @use "blocks/contacts.scss";
 @use "blocks/footer.scss";
-@use "blocks/social.scss";
-@use "blocks/social-link.scss";
+@use "blocks/social-list.scss";
 @use "blocks/copyright.scss";
 @use "blocks/selection.scss";
 @use "blocks/selection-field.scss";

@@ -1,47 +1,123 @@
+@use "common/variables.scss";
+
 .advantages {
   padding: 20px 0 50px 0;
+
+  @media (min-width: variables.$tablet-width) {
+    border-bottom: 1px solid #e6e6e6;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    border-bottom: none;
+    padding-bottom: 70px;
+  }
 }
 
 .advantages__title {
   margin-bottom: 40px;
   font-family: "Oswald", sans-serif;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   text-align: left;
   color: #000000;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 37px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 0;
+  }
 }
 
 .advantages__item {
-  // display: flex;
-  // align-items: center;
-  // position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
+  @media (min-width: variables.$tablet-width) {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    row-gap: 31px;
+    width: 250px;
+    height: 280px;
+    background: url("../../img/1.svg") no-repeat 70% 0;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 230px;
+    }
+
+    &:nth-child(odd) {
+      margin-right: 153px;
+
+      @media (min-width: variables.$desktop-width) {
+        margin-right: 0;
+      }
+    }
+  }
+
+
   &:not(:last-child) {
     margin-bottom: 20px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 0;
+    }
   }
 
   &::before {
     content: "";
-    // position: absolute;
-    // display: block;
     width: 60px;
     height: 60px;
-    background-color: #68b738;
-    // margin-left: 20px;
+    background: #68b738 no-repeat 50%;
+
+    @media (min-width: variables.$tablet-width) {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &--leaf::before {
+    background-image: url("../../img/advantages-leaf.svg");
+  }
+
+  &--powder::before {
+    background-image: url("../../img/advantages-water.svg");
+  }
+
+  &--cutlery::before {
+    background-image: url("../../img/advantages-eat.svg");
+  }
+
+  &--watch::before {
+    background-image: url("../../img/advantages-watch.svg");
   }
 }
 
 .advantages__text {
   margin: 0;
-  // padding-left: 80px;
-  // padding-right: 20px;
+  max-width: 200px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 100%;
+  }
 }

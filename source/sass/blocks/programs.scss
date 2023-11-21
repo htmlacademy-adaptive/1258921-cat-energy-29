@@ -1,54 +1,33 @@
 @use "common/variables.scss";
 
 .programs {
-  padding-top: 27px;
-  background-image: url("../../img/index-background-cat.png");
-  background-color: #68b738d9;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: auto;
-
-  @media (min-width: variables.$tablet-width) {
-    background-color: #ffffff;
-  }
-
   @media (min-width: variables.$desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../../img/index-background-cat.png");
-    background-repeat: no-repeat;
-    background-position: 50% 50%;
-    background-size: auto;
+    margin-top: 82px;
   }
 }
-
-
-.programs__title {
-  margin: 0 0 25px 0;
-}
-
-.programs__description {
-  margin: 0 0 29px 0;
-  font-family: "Oswald", sans-serif;
-  text-align: center;
-  line-height: 14px;
-  color: #ffffff;
-  text-transform: uppercase;
-
-  @media (min-width: variables.$tablet-width) {
-    color: #000000;
-  }
-}
-
-.programs__link {
-  margin-bottom: 20px;
-}
-
 
 .programs__list {
   list-style-type: none;
   margin: 0;
   padding: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    column-gap: 80px;
+  }
+}
+
+.programs__item {
+  @media (min-width: variables.$desktop-width) {
+    width: 570px;
+    height: 100%;
+  }
 }
 
 .programs__item:not(:last-child) {
   margin-bottom: 20px;
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 0;
+  }
 }
