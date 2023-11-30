@@ -15,6 +15,10 @@
   }
 }
 
+.example__wrapper {
+  position: relative;
+}
+
 .example__title {
   font-family: "Oswald", sans-serif;
   font-size: 36px;
@@ -37,6 +41,19 @@
 }
 
 .example__background-container {
+  @media (min-width: variables.$tablet-width) {
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 462px;
+      width: 100%;
+      background-color: #EAEAEA;
+      z-index: 0;
+      top: 590px;
+    }
+  }
+
   @media (min-width: variables.$desktop-width) {
     background-color: #f2f2f2;
     padding-top: 70px;
@@ -59,7 +76,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 250px;
+    margin-bottom: 99px;
   }
 }
 
@@ -82,15 +99,11 @@
   border-radius: 3px;
   display: flex;
   flex-direction: column;
-  // align-content: center;
-  // padding: 124px 0 56px;
   padding: 15px 20px 0;
-  // padding-top: 15px;
-  // justify-content: center;
 
   @media (min-width: variables.$tablet-width) {
     width: 162px;
-    height: 77px;
+    height: 72px;
     justify-content: center;
   }
 }
@@ -102,6 +115,12 @@
   color: #000000;
   text-align: center;
   margin-bottom: 8px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 11px;
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .example__description {
@@ -111,6 +130,15 @@
   text-align: center;
   width: 77px;
   background-color: #eaeaea;
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #ffffff;
+    width: 142px;
+    font-size: 14px;
+    line-height: 14px;
+    position: relative;
+    left: -12px;
+  }
 }
 
 .example__result {
@@ -139,3 +167,11 @@
 //     background-color: #eaeaea;
 //   }
 // }
+
+.example__image {
+  @media (min-width: variables.$tablet-width) {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 100px;
+  }
+}

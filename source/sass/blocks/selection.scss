@@ -1,3 +1,5 @@
+@use "common/variables.scss";
+
 .selection {
   background-color: #ffffff;
   padding-bottom: 32px;
@@ -7,6 +9,12 @@
   font-size: 36px;
   line-height: 36px;
   margin-bottom: 37px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 54px;
+  }
 }
 
 .selection__text {
@@ -15,11 +23,22 @@
   color: #000000;
   margin: 0;
   margin-bottom: 39px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 66px;
+  }
 }
 
 .selection__form {
   font-family: "Oswald", sans-serif;
   font-size: 16px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .selection__field {
@@ -30,6 +49,11 @@
   &:nth-child(3) {
     margin-top: 26px;
     padding-bottom: 24px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-top: 65px;
+      padding-bottom: 65px;
+    }
   }
 
   &:nth-child(4) {

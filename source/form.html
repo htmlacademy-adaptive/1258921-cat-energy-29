@@ -11,9 +11,16 @@
 <body class="page__body">
   <header class="header">
     <div class="header__wrapper wrapper">
-      <a class="header__link logo-link" href="#">
-        <img class="header__logo" src="img/logo-primary-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
-        <img class="header__logo" src="img/logo-secondary.svg" width="101" height="18" alt="Cat Energy.">
+      <a class="header__link" href="index.html">
+        <!-- I need to fix this. I can use the picture tag here-->
+        <img class="header__logo" src="img/icons/logo-primary-mobile.svg" width="33" height="38"
+          alt="Логотип Cat Energy.">
+        <img class="header__logo" src="img/icons/logo-secondary.svg" width="101" height="18" alt="Cat Energy.">
+        <!-- <picture>
+          <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logotype-tablet.svg">
+          <img src="img/logotype-phone.svg" width="226" height="30" alt="Барбершоп «Бородинский».">
+        </picture> -->
       </a>
       <nav class="navigation navigation--closed">
         <button class="navigation__toglle" type="button">
@@ -22,26 +29,25 @@
         <div class="navigation__wrapper">
           <ul class="navigation__list">
             <li class="navigation__item">
-              <a class="navigation__link navigation__link--current" href="index.html">главная</a>
+              <a class="navigation__link" href="index.html">главная</a>
             </li>
             <li class="navigation__item">
               <a class="navigation__link" href="catalog.html">каталог продукции</a>
             </li>
             <li class="navigation__item">
-              <a class="navigation__link" href="form.html">подбор программы</a>
+              <a class="navigation__link navigation__link--current" href="form.html">подбор программы</a>
             </li>
           </ul>
         </div>
       </nav>
     </div>
   </header>
-
   <main class="main-container main-container--form">
     <h1 class="visually-hidden">Подбор программы</h1>
     <section class="selection">
       <div class="selection__wrapper wrapper">
         <h2 class="selection__title title">Подбор программы</h2>
-        <p class="selection__text">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+        <p class="selection__text">Заполните анкету, и мы подберем<br> программу питания для вашего кота</p>
         <form class="selection__form" action="https://echo.htmlacademy.ru/" method="post">
           <fieldset class="selection__field primary-fieldset">
             <legend class="visually-hidden">Личные данные кота</legend>
@@ -178,36 +184,28 @@
     <div class="footer__wrapper wrapper">
       <a class="footer__link logo-link" href="#">
         <picture>
-          <source media="(min-width: 1200px)" srcset="#">
-          <source media="(min-width: 768px)" srcset="#">
-          <img class="footer__logo" src="img/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
+          <img class="footer__logo" src="img/icons/logo-secondary.svg" width="128" height="24" alt="Cat Energy.">
         </picture>
       </a>
       <ul class="footer__list social-list">
         <li class="social__item">
           <a class="social__link social__link--vk" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="#">
-              <source media="(min-width: 768px)" srcset="#">
-              <img src="img/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
+              <img src="img/icons/vkontakte.svg" width="28" height="22" alt="Вконтакте.">
             </picture>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="#">
-              <source media="(min-width: 768px)" srcset="#">
-              <img src="img/youtube.svg" width="28" height="22" alt="YouTube.">
+              <img src="img/icons/youtube.svg" width="28" height="22" alt="YouTube.">
             </picture>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="#">
             <picture>
-              <source media="(min-width: 1200px)" srcset="#">
-              <source media="(min-width: 768px)" srcset="#">
-              <img src="img/telegram.svg" width="28" height="22" alt="Telegram.">
+              <img src="img/icons/telegram.svg" width="28" height="22" alt="Telegram.">
             </picture>
           </a>
         </li>
@@ -215,9 +213,7 @@
       <a class="copyright__link" href="https://htmlacademy.ru/">
         <p class="copyright__text">HTML Academy</p>
         <picture>
-          <source media="(min-width: 1200px)" srcset="#">
-          <source media="(min-width: 768px)" srcset="#">
-          <img class="copyright__logo" src="img/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
+          <img class="copyright__logo" src="img/icons/html_academy_logo.svg" width="27" height="34" alt="HTML Academy.">
         </picture>
       </a>
     </div>

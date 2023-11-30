@@ -11,12 +11,24 @@
   margin-bottom: 13px;
   grid-column: 1 / -1;
   grid-row: 1 / 2;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .additional-product__term {
   margin: 0;
   grid-column: 1 / 2;
   grid-row: 2 / 3;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 16px;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    justify-self: flex-end;
+  }
 }
 
 .additional-product__description {
@@ -24,4 +36,9 @@
   justify-self: flex-end;
   grid-column: 2 / 3;
   grid-row: 2 / 3;
+
+  @media (min-width: variables.$tablet-width) {
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+  }
 }

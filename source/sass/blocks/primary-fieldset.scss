@@ -5,12 +5,20 @@
   padding: 0;
   border: none;
   padding-bottom: 24px;
+
+  @media (min-width: variables.$tablet-width) {
+    padding-bottom: 72px;
+  }
 }
 
 .primary-fieldset__title {
   position: relative;
   margin-bottom: 35px;
   line-height: 26px;
+
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 76px;
+  }
 
   &::after {
     content: "";
@@ -21,6 +29,10 @@
     height: 2px;
     width: 400%;
     background-color: #68b738;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 550px;
+    }
   }
 }
 
@@ -33,6 +45,10 @@
 .primary-fieldset__item {
   &:not(:last-of-type) {
     margin-bottom: 14px;
+
+    @media (min-width: variables.$tablet-width) {
+      margin-bottom: 20px;
+    }
   }
 }
 

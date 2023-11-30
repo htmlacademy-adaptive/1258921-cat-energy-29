@@ -5,6 +5,10 @@
   line-height: 26px;
   margin-bottom: 38px;
 
+  @media (min-width: variables.$tablet-width) {
+    margin-bottom: 87px;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -14,6 +18,10 @@
     height: 2px;
     width: 400%;
     background-color: #68b738;
+
+    @media (min-width: variables.$tablet-width) {
+      left: 220px;
+    }
   }
 }
 

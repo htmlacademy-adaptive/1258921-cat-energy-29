@@ -8,6 +8,11 @@
   // text-transform: uppercase;
   color: #000000;
   margin: 0;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .primary-title {
