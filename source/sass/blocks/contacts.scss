@@ -26,7 +26,6 @@
   }
 
   &::before {
-
     @media (min-width: variables.$tablet-width) {
       content: "";
       position: absolute;
