@@ -98,7 +98,7 @@
   background-color: #ffffff;
 }
 
-.checkbox-fieldset__input:checked+.checkbox-fieldset__control-mark {
+.checkbox-fieldset__input:checked + .checkbox-fieldset__control-mark {
   &::before {
     content: "";
     position: absolute;
