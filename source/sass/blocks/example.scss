@@ -3,17 +3,43 @@
 .example {
   background-color: #eaeaea;
   padding: 25px 0 40px 0;
+  position: relative;
 
   @media (min-width: variables.$tablet-width) {
     background-color: #ffffff;
     padding: 45px 0 0 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 462px;
+      width: 100%;
+      background-color: #f2f2f2;
+      z-index: 0;
+      top: 658px;
+      left: 0;
+    }
   }
 
   @media (min-width: variables.$desktop-width) {
     background-color: #ffffff;
     padding: 0;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 462px;
+      width: 100%;
+      background-color: #f2f2f2;
+      z-index: 0;
+      top: 136px;
+      left: 0;
+    }
   }
 }
+
 
 .example__wrapper {
   position: relative;
@@ -42,22 +68,32 @@
 
 .example__background-container {
   @media (min-width: variables.$tablet-width) {
-    &::before {
-      content: "";
-      position: absolute;
-      display: block;
-      height: 462px;
-      width: 100%;
-      background-color: #eaeaea;
-      z-index: 0;
-      top: 590px;
-    }
+    // &::before {
+    //   content: "";
+    //   position: absolute;
+    //   display: block;
+    //   height: 462px;
+    //   width: 100%;
+    //   background-color: #EAEAEA;
+    //   z-index: 0;
+    //   top: 590px;
+    // }
   }
 
   @media (min-width: variables.$desktop-width) {
     background-color: #f2f2f2;
-    padding-top: 70px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 42px;
+    position: relative;
+    padding: 70px 0 75px 0;
+
+    // &::before {
+    //   content: "";
+    //   display: none;
+    // }
   }
+
 }
 
 .example__text {
@@ -69,6 +105,13 @@
     line-height: 24px;
     margin-bottom: 55px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    margin: 0;
+    margin-bottom: 69px;
+  }
 }
 
 .example__container {
@@ -77,6 +120,14 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 99px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    flex-wrap: wrap;
+    row-gap: 55px;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    margin: 0;
   }
 }
 
@@ -139,6 +190,10 @@
     position: relative;
     left: -12px;
   }
+
+  @media (min-width: variables.$tablet-width) {
+    background-color: #f2f2f2;
+  }
 }
 
 .example__result {
@@ -155,6 +210,13 @@
     font-size: 20px;
     width: 174px;
     text-align: end;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+    margin: 0;
   }
 }
 
@@ -173,5 +235,18 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 100px;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.example__background-container picture {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    position: absolute;
+    top: -205px;
   }
 }

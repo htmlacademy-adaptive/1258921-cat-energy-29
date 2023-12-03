@@ -1,5 +1,12 @@
 @use "common/variables.scss";
 
+.comment-fieldset {
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 3;
+  }
+
+}
+
 .comment-fieldset__title {
   position: relative;
   line-height: 26px;
@@ -22,6 +29,10 @@
     @media (min-width: variables.$tablet-width) {
       left: 220px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+      width: 700%;
+    }
   }
 }
 
@@ -39,5 +50,9 @@
     color: #444444;
     text-transform: uppercase;
     vertical-align: top;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 175px;
   }
 }

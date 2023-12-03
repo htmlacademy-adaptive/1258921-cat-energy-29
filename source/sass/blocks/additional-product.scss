@@ -16,6 +16,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: variables.$desktop-width) {
+    margin: 0;
+  }
 }
 
 .additional-product__term {
@@ -28,6 +32,10 @@
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     justify-self: flex-end;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    justify-self: flex-start;
   }
 }
 

@@ -42,10 +42,10 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      // grid-column: 1 / 2;
-      // grid-row: 1 / 2;
-      // width: 100px;
-      // height: 100px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -66,10 +66,10 @@
     }
 
     @media (min-width: variables.$desktop-width) {
-      // grid-column: 1 / 2;
-      // grid-row: 1 / 2;
-      // width: 100px;
-      // height: 100px;
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      width: 100px;
+      height: 100px;
     }
   }
 
@@ -80,6 +80,10 @@
     @media (min-width: variables.$tablet-width) {
       background: url("../../img/icons/cat-slim-tablet.svg") no-repeat center;
       // top: -3px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background: url("../../img/icons/cat-slim-desktop.svg") no-repeat center;
     }
   }
 
@@ -92,11 +96,16 @@
 
     @media (min-width: variables.$tablet-width) {
       background: url("../../img/icons/cat-pro-tablet.svg") no-repeat center;
-      // top: -3px;
       width: 270px;
       height: 140px;
       top: 40px;
       left: -35px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      background: url("../../img/icons/cat-pro-desktop.svg") no-repeat center;
+      top: -15px;
+      left: -90px;
     }
   }
 }
@@ -121,7 +130,7 @@
 }
 
 .program-card__description {
-  grid-column: 1 / -1;
+  grid-column: 2 / -1;
   grid-row: 2 / 3;
   margin: 0;
 

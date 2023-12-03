@@ -37,6 +37,11 @@
   width: 30px;
   height: 30px;
   margin: 0;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-fieldset__control-mark {
@@ -51,6 +56,11 @@
   background-color: #ffffff;
   cursor: pointer;
   z-index: 1;
+
+  @media (min-width: variables.$desktop-width) {
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .radio-fieldset__input:checked + .radio-fieldset__control-mark {
@@ -66,5 +76,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 2;
+
+    @media (min-width: variables.$desktop-width) {
+      width: 18px;
+      height: 18px;
+    }
   }
 }

@@ -18,9 +18,9 @@
   color: #000000;
   margin-bottom: 41px;
 
-  // @media (min-width: variables.$tablet-width) {
-
-  // }
+  @media (min-width: variables.$desktop-width) {
+    margin-bottom: 165px;
+  }
 }
 
 .catalog__list {
@@ -37,14 +37,18 @@
   @media (min-width: variables.$desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 60px;
+    column-gap: 60px;
+    row-gap: 144px;
   }
 }
 
 .catalog__item {
   @media (min-width: variables.$tablet-width) {
-    height: 415px;
     align-self: flex-end;
+  }
+
+  @media (min-width: variables.$desktop-width) {
+    height: 100%;
   }
 }
 
@@ -66,6 +70,10 @@
     flex-direction: column;
   }
 
+  @media (min-width: variables.$desktop-width) {
+    height: 100%;
+  }
+
   &::before {
     content: "";
     display: block;
@@ -79,6 +87,10 @@
       margin-top: 30px;
       margin-bottom: 80px;
       width: 60px;
+    }
+
+    @media (min-width: variables.$desktop-width) {
+      margin-top: 45px;
     }
   }
 

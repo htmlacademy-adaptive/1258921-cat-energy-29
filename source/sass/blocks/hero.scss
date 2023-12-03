@@ -9,10 +9,11 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../../img/index-background-cat.png");
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%), url("../../img/index-background-cat.png");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: contain;
+    padding-top: 55px;
   }
 
   &::before {
@@ -27,6 +28,10 @@
     background-position: top;
     background-color: #63a73a;
     z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/index/index-background-cat-desktop.png");
+    }
   }
 }
 
@@ -67,21 +72,13 @@
   }
 }
 
-// .hero__img {
-//   @media (min-width: variables.$tablet-width) {
-//     position: relative;
-//   }
-// }
-
-// .hero__image {
-//   @media (min-width: variables.$tablet-width) {
-//     position: relative;
-//   }
-
-//   @media (min-width: variables.$desktop-width) {
-//     ///
-//   }
-// }
+.hero__picture {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    top: -290px;
+    left: 366px;
+  }
+}
 
 .hero__link {
   margin-bottom: 20px;

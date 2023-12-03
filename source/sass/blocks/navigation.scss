@@ -2,8 +2,12 @@
 
 .navigation {
   display: block;
-  // position: relative;
   background-color: #ffffff;
+
+  @media (min-width: variables.$desktop-width) {
+    background-color: #68b738;
+
+  }
 }
 
 .navigation__toglle {
@@ -80,6 +84,10 @@
   padding: 22px;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
+
+  @media (min-width: variables.$desktop-width) {
+    color: #ffffff;
+  }
 }
 
 .navigation__item:first-of-type .navigation__link {
@@ -136,9 +144,9 @@
     // background-color: #68B738;
   }
 
-  .navigation__link {
-    color: #ffffff;
-  }
+  // .navigation__link {
+  //   color: #ffffff;
+  // }
 
   .navigation__link--current::before {
     background-color: #ffffff;

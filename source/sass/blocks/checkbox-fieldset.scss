@@ -6,6 +6,11 @@
   border: none;
   padding-bottom: 34px;
   // padding: 19px 0 22px;
+
+  @media (min-width: variables.$desktop-width) {
+    grid-column: 1 / 3;
+    padding-bottom: 60px;
+  }
 }
 
 .checkbox-fieldset__title {
@@ -30,6 +35,10 @@
     @media (min-width: variables.$tablet-width) {
       left: 250px;
     }
+
+    @media (min-width: variables.$desktop-width) {
+      width: 600%;
+    }
   }
 }
 
@@ -37,11 +46,20 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: variables.$desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
 }
 
 .checkbox-fieldset__item {
   &:not(:last-child) {
     margin-bottom: 13px;
+
+    @media (min-width: variables.$desktop-width) {
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -80,7 +98,7 @@
   background-color: #ffffff;
 }
 
-.checkbox-fieldset__input:checked + .checkbox-fieldset__control-mark {
+.checkbox-fieldset__input:checked+.checkbox-fieldset__control-mark {
   &::before {
     content: "";
     position: absolute;
