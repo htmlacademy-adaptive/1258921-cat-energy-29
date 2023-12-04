@@ -14,7 +14,6 @@
     grid-template-columns: auto 200px;
     padding: 77px 63px 53px 52px;
     column-gap: 53px;
-    // align-items: flex-start;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -79,7 +78,6 @@
 
     @media (min-width: variables.$tablet-width) {
       background: url("../../img/icons/cat-slim-tablet.svg") no-repeat center;
-      // top: -3px;
     }
 
     @media (min-width: variables.$desktop-width) {
@@ -130,7 +128,7 @@
 }
 
 .program-card__description {
-  grid-column: 2 / -1;
+  grid-column: 1 / -1;
   grid-row: 2 / 3;
   margin: 0;
 

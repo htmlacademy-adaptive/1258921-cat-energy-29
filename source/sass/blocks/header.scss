@@ -9,10 +9,21 @@
   color: #111111;
   margin: 13px 0;
 
+  @media (min-width: variables.$tablet-width) {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
   @media (min-width: variables.$desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%), url("../../img/index-background-cat.png");
     margin: 0;
     padding: 55px 0;
+    font-size: 20px;
+    line-height: 30px;
+
+    &--index {
+      background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%), url("../../img/index-background-cat.png");
+      color: #ffffff;
+    }
   }
 }
 
@@ -38,44 +49,19 @@
   align-items: center;
 }
 
-.header__logo:last-child {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header__logo {
-  // width: 33px;
-  // height: 38px;
+.header__picture {
+  &:last-child {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 
   @media (min-width: variables.$tablet-width) {
-    // width: 60px;
-    // height: 50px;
-  }
-
-  @media (min-width: variables.$desktop-width) {
-    // width: 70px;
-    // height: 59px;
-  }
-}
-
-@media (min-width: variables.$tablet-width) {
-  .header {
-    font-size: 18px;
-    line-height: 24px;
-  }
-
-  .header__logo:last-child {
-    position: static;
-    transform: translate(0, 0);
-    margin-left: 13px;
-  }
-}
-
-@media (min-width: variables.$desktop-width) {
-  .header {
-    font-size: 20px;
-    line-height: 30px;
+    &:last-child {
+      position: static;
+      transform: translate(0, 0);
+      margin-left: 13px;
+    }
   }
 }

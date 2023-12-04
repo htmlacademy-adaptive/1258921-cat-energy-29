@@ -14,6 +14,7 @@
     background-position: 100% 50%;
     background-size: contain;
     padding-top: 55px;
+    height: 540px;
   }
 
   &::before {
@@ -77,6 +78,8 @@
     position: relative;
     top: -290px;
     left: 366px;
+    display: block;
+    width: 552px;
   }
 }
 

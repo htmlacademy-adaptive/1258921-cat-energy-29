@@ -6,6 +6,12 @@
   height: 100%;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .page__body {
   background-color: #ffffff;
   font-family: "Lato", sans-serif;
