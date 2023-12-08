@@ -159,6 +159,14 @@
   column-gap: 15px;
   flex-wrap: wrap;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: variables.$tablet-width) {
     grid-column: 1 / 2;
     column-gap: 25px;
