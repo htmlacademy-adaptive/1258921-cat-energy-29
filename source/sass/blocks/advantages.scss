@@ -25,6 +25,7 @@
   @media (min-width: variables.$tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-bottom: 72px;
   }
 }
 
@@ -58,7 +59,7 @@
     row-gap: 31px;
     width: 250px;
     height: 280px;
-    background: url("../../img/1.svg") no-repeat 70% 0;
+    background: url("../../img/icons/one-background.svg") no-repeat 70% 0;
 
     @media (min-width: variables.$desktop-width) {
       width: 230px;
@@ -94,20 +95,44 @@
     }
   }
 
+  &--leaf {
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/icons/one-background.svg");
+    }
+  }
+
+  &--powder {
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/icons/two-background.svg");
+    }
+  }
+
+  &--cutlery {
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/icons/three-background.svg");
+    }
+  }
+
+  &--watch {
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/icons/four-background.svg");
+    }
+  }
+
   &--leaf::before {
-    background-image: url("../../img/advantages-leaf.svg");
+    background-image: url("../../img/icons/advantages-leaf.svg");
   }
 
   &--powder::before {
-    background-image: url("../../img/advantages-water.svg");
+    background-image: url("../../img/icons/advantages-water.svg");
   }
 
   &--cutlery::before {
-    background-image: url("../../img/advantages-eat.svg");
+    background-image: url("../../img/icons/advantages-eat.svg");
   }
 
   &--watch::before {
-    background-image: url("../../img/advantages-watch.svg");
+    background-image: url("../../img/icons/advantages-watch.svg");
   }
 }
 

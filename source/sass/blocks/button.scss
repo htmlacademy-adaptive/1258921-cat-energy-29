@@ -1,3 +1,5 @@
+@use "common/variables.scss";
+
 .button {
   font-family: "Oswald", sans-serif;
   font-weight: 400;
@@ -9,7 +11,15 @@
   color: #ffffff;
   border: none;
   display: block;
-  // width: 280px;
+  opacity: 1;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .button--primary {
@@ -17,6 +27,12 @@
   font-size: 16px;
   line-height: 20px;
   padding: 10px;
+
+  @media (min-width: variables.$tablet-width) {
+    font-size: 20px;
+    line-height: 26px;
+    padding: 14px;
+  }
 }
 
 .button--secondary {

@@ -1,6 +1,6 @@
 @use "common/variables.scss";
 
-.social-list {
+.social {
   list-style-type: none;
   margin: 0;
   padding: 20px 0 20px 0;
@@ -13,10 +13,13 @@
   }
 }
 
-.social-link {
-  background-color: #ffffff;
+.social__link {
+  // background-color: #ffffff;
+  &:hover {
+    opacity: 0.6;
+  }
 
-  // &--vk {}
-  // &--youtube {}
-  // &--telegram {}
+  &:active {
+    opacity: 0.3;
+  }
 }

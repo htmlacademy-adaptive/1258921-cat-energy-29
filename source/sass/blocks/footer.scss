@@ -2,8 +2,6 @@
 
 .footer {
   background-color: #f2f2f2;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .footer__wrapper {
@@ -32,6 +30,14 @@
   justify-content: center;
   border-bottom: 1px solid #d9d9d9;
   padding: 40px 0 20px 0;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: variables.$tablet-width) {
     padding: 0;

@@ -9,10 +9,12 @@
   }
 
   @media (min-width: variables.$desktop-width) {
-    background-image: linear-gradient(to right, #ffffff 50%, #68b738d9 50%), url("../../img/index-background-cat.png");
+    background-image: linear-gradient(to right, #ffffff 50%, #68b738 50%), url("../../img/index-background-cat.png");
     background-repeat: no-repeat;
     background-position: 100% 50%;
     background-size: contain;
+    padding-top: 55px;
+    height: 540px;
   }
 
   &::before {
@@ -22,17 +24,22 @@
     right: 0;
     width: 100%;
     height: 302px;
-    background-image: url("../../img/index-background-cat.png");
+    background-image: url("../../img/index/index-background-cat.png");
     background-repeat: no-repeat;
     background-position: top;
     background-color: #63a73a;
     z-index: -1;
+
+    @media (min-width: variables.$tablet-width) {
+      background-image: url("../../img/index/index-background-cat-desktop.png");
+    }
   }
 }
 
 .hero__wrapper {
   @media (min-width: variables.$tablet-width) {
     padding-left: 90px;
+    position: relative;
   }
 
   @media (min-width: variables.$desktop-width) {
@@ -66,22 +73,23 @@
   }
 }
 
-// .hero__image {
-//   @media (min-width: variables.$tablet-width) {
-//     position: relative;
-//   }
-
-//   @media (min-width: variables.$desktop-width) {
-//     ///
-//   }
-// }
+.hero__picture {
+  @media (min-width: variables.$desktop-width) {
+    position: relative;
+    top: -290px;
+    left: 366px;
+    display: block;
+    width: 552px;
+  }
+}
 
 .hero__link {
   margin-bottom: 20px;
 
   @media (min-width: variables.$tablet-width) {
     position: absolute;
-    top: 0;
-    left: 0;
+    top: 235px;
+    left: 90px;
+    width: 244px;
   }
 }
